@@ -32,7 +32,7 @@ FormulariosApp
 > Pantalla de **Validaciones - Registro**
 
 
-Para la validación de email se debe levantar la BD con el siguiente comando **json-server --watch db.json** en la terminal se visualiza asi:
+Para la validación de email se debe levantar la BD con el siguiente comando **json-server --watch db.json** ó ejecutando ```npm run backend``` en la terminal se visualiza asi:
 
 ![](https://raw.githubusercontent.com/sgcm14/formularios-app/main/doc/db-json.png)
 > Pantalla de **BD Json-server**
