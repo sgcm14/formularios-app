@@ -50,6 +50,7 @@ export class DinamicosComponent {
     }
 
     console.log(this.miFormulario.value);
+    (this.miFormulario.controls['favoritos'] as FormArray) = this.formBuilder.array([]);
     this.miFormulario.reset();
   }
 

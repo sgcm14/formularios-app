@@ -37,6 +37,22 @@ export class BasicosComponent implements OnInit {
       this.miFormulario.controls[campo].touched;
   }
 
+  getFieldError(field: string): string | null {
+    if (!this.miFormulario.controls[field]) return null;
+    const errors = this.miFormulario.controls[field].errors || {};
+
+    for (const key of Object.keys(errors)) {
+      switch (key) {
+        case 'required':
+          return 'Este campo es requerido';
+
+        case 'minlength':
+          return `Mínimo ${errors['minlength'].requiredLength} caracters.`;
+      }
+    }
+    return null;
+  }
+
   guardar() {
     if (this.miFormulario.invalid) {
       this.miFormulario.markAllAsTouched();

@@ -12,7 +12,7 @@
         <div class="col-sm-9">
           <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre del producto" />
           <span class="form-text text-danger" *ngIf="campoEsValido('nombre')">
-            Debe de ser de 3 letras
+            {{getFieldError('nombre')}}
           </span>
         </div>
       </div>
