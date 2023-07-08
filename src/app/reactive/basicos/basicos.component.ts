@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styles: [
   ]
 })
-export class BasicosComponent implements OnInit {
+export class BasicosReactiveComponent implements OnInit {
 
   // miFormulario: FormGroup = new FormGroup({
   //   'nombre': new FormControl('RTX 400ti'),
