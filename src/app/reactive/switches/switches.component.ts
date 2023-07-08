@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styles: [
   ]
 })
-export class SwitchesComponent implements OnInit {
+export class SwitchesReactiveComponent implements OnInit {
 
   miFormulario: FormGroup = this.formBuilder.group({
     genero: ['M', Validators.required],

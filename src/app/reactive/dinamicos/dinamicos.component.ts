@@ -7,7 +7,7 @@ import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@ang
   styles: [
   ]
 })
-export class DinamicosComponent {
+export class DinamicosReactiveComponent {
 
   miFormulario: FormGroup = this.formBuilder.group({
     nombre: [, [Validators.required, Validators.minLength(3)]],
